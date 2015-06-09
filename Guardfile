@@ -36,7 +36,7 @@ def markdown_to_reveal
 end
 
 guard :shell do
-  watch(/(.*)\.md/) { markdown_to_reveal }
+  watch(/index\.md/) { markdown_to_reveal }
   watch(/(.*)\.rb/) { markdown_to_reveal }
 end
 
