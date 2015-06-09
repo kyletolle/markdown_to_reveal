@@ -66,6 +66,14 @@ Put the actual image files in your `REVEAL_JS_PATH` so you can see them when
 you view your presentation.
 ```
 
+## Slide Template
+
+There's a `lib/templates/template.html.erb` which will be used as the
+scaffolding for the presentation.
+
+Currently, it's configured to generate a talk like my
+[ruby_webhooks_intro](https://github.com/kyletolle/ruby_webhooks_intro) talk.
+
 ## Running
 
 `ruby lib/markdown_to_reveal.rb`
