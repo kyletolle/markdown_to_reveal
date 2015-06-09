@@ -32,6 +32,7 @@ require 'fastenv'
 directories ['.', './lib', Fastenv.markdown_path]
 
 def markdown_to_reveal
+  $stderr.puts "Generating the presentation!"
   `ruby lib/markdown_to_reveal.rb`
 end
 
