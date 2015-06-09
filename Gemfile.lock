@@ -53,6 +53,7 @@ PLATFORMS
 DEPENDENCIES
   dotenv
   fastenv
+  guard
   guard-shell
   kramdown
   tilt
