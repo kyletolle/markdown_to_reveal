@@ -3,7 +3,7 @@ require 'kramdown'
 class Slide
   def initialize(markdown_page)
     @markdown_page = markdown_page
-    @content, @notes = @markdown_page.split "---"
+    @content, @notes = @markdown_page.split "___"
   end
 
   def write_html_to(output)
