@@ -1,6 +1,6 @@
 # Markdown To Reveal
 
-Generate a Reveal.js talk from a Markdown file.
+Generate a [reveal.js](https://github.com/hakimel/reveal.js) talk from a Markdown file.
 
 ## Install
 
@@ -17,6 +17,54 @@ an `.env` at the root of this project.
 - `MARKDOWN_PATH`
   - The absolute path where your markdown file is located.
   - An `index.md` will be read from here.
+
+## Markdown Format
+
+The `index.md` is a single file which contains all your slides.
+
+### Slide Separator
+
+Slides are separated by six hyphens (`------`).
+
+### Notes Separator
+
+Each slide can have a speaker notes section too. After your slide content,
+add three underscores (`___`), and then add your speaker notes. You'll still
+separate the next slide with the hyphens like above.
+
+### Example
+
+Here's an example of a presentation in `index.md`:
+
+```
+# First slide of the talk
+------
+
+
+## Second slide of the talk
+
+And some regular text.
+-------
+
+
+## Third Slide
+
+Below, we'll have some speaker notes.
+___
+This slide has notes too. These work with reveal.js' speaker mode. And they
+don't show in the presentation. Notice how the notes are separated from the
+slide content by three underscores?
+------
+
+
+
+## Add some images
+
+![add images too](image_path.jpg)
+___
+Put the actual image files in your `REVEAL_JS_PATH` so you can see them when
+you view your presentation.
+```
 
 ## Running
 
