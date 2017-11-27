@@ -4,7 +4,9 @@ Generate a [reveal.js](https://github.com/hakimel/reveal.js) talk from a Markdow
 
 ## Install
 
-`bundle install --path=.bundle`
+```
+bundle install --path=.bundle
+```
 
 
 ## Setup
@@ -94,11 +96,15 @@ Currently, it's configured to generate a talk like my
 
 If the env vars are in `.env`, you can run the following command in this project's directory:
 
-`ruby lib/markdown_to_reveal.rb`
+```
+ruby lib/markdown_to_reveal.rb
+```
 
 Alternatively, you can specify the env vars on the CLI, and run the command from anywhere by using absolute paths:
 
-`MARKDOWN_PATH="/Users/kyle/Dropbox/code/kyletolle/talks/dbs_and_devs" REVEAL_JS_PATH="/Users/kyle/Dropbox/code/kyletolle/dbs_and_devs_talk" ruby /Users/kyle/Dropbox/code/kyletolle/markdown_to_reveal/lib/markdown_to_reveal.rb`
+```
+MARKDOWN_PATH="/Users/kyle/Dropbox/code/kyletolle/talks/dbs_and_devs" REVEAL_JS_PATH="/Users/kyle/Dropbox/code/kyletolle/dbs_and_devs_talk" ruby /Users/kyle/Dropbox/code/kyletolle/markdown_to_reveal/lib/markdown_to_reveal.rb
+```
 
 
 ## Guard
@@ -107,13 +113,18 @@ You can run `guard` to watch the markdown file and generate the reveal.js presen
 
 If the env vars are in `.env`, you can run the following command in this project's directory:
 
-`bundle exec guard`
+```
+bundle exec guard
+```
 
 Alternatively, you can specify the env vars on the CLI, and run the following command in this project's directory:
 
-`MARKDOWN_PATH="/Users/kyle/Dropbox/code/kyletolle/talks/dbs_and_devs" REVEAL_JS_PATH="/Users/kyle/Dropbox/code/kyletolle/dbs_and_devs_talk" bundle exec guard`
+```
+MARKDOWN_PATH="/Users/kyle/Dropbox/code/kyletolle/talks/dbs_and_devs" REVEAL_JS_PATH="/Users/kyle/Dropbox/code/kyletolle/dbs_and_devs_talk" bundle exec guard
+```
 
 Combine this with `grunt serve` in the talk's reveal.js repo and you'll see the changes to your presentation, live, as you edit your markdown file.
+
 
 ## License
 
